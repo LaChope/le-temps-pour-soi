@@ -1,0 +1,23 @@
+.contact-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding-top: 120px;
+  padding-bottom: 120px;
+
+  .map {
+    height: 50vh;
+    width: 50vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact-container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    .map {
+      width: 90vw;
+      height: 50vh;
+    }
+  }
+}

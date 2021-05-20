@@ -1,0 +1,92 @@
+.nos-services-header {
+  padding-top: 120px;
+  text-align: center;
+}
+
+.nos-services-container {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: 1fr 1fr;
+  grid-column-gap: 2vw;
+  grid-row-gap: 8vh;
+  width: 100%;
+  padding-top: 80px;
+  padding-bottom: 20vh;
+
+  .nos-services-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 40vh;
+
+    .nos-services-picture-card {
+      position: relative;
+      height: 85%;
+      width: 100%;
+      margin-bottom: 5%;
+      border: 1px solid #000;
+      object-fit: cover;
+    }
+
+    button {
+      background-color: rgba(241, 204, 190, 0.5);
+      font-size: 1.5em;
+
+      &:hover {
+        background-color: rgba(241, 204, 190, 0.8);
+      }
+    }
+  }
+}
+
+.main-picture {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/entree.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding-top: 30vh;
+  padding-bottom: 30vh;
+
+  .main-picture-content {
+    position: absolute;
+    text-align: center;
+    left: 0;
+    right: 0;
+    width: 30%;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .nos-services-container {
+    position: relative;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+
+
+    .nos-services-card {
+      max-height: 250px;
+      max-width: 300px;
+
+      button {
+        font-size: 0.9em;
+      }
+    }
+  }
+
+  .main-picture {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+  }
+}
+

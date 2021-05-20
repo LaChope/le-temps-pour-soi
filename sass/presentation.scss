@@ -1,0 +1,34 @@
+.presentation-container {
+  position: relative;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-column-gap: 5vw;
+  width: 100%;
+
+  .presentation-picture-card {
+    position: relative;
+    border: 1px solid #000;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40vh;
+  }
+
+  .presentation-text {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .presentation-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-row-gap: 5vh;
+
+    .presentation-picture-card {
+      height: 200px;
+    }
+  }
+}
+
